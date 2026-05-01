@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background: #0d0d0b;
+  color: #f5f0e8;
+  font-family: 'Jost', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  border: 1px solid rgba(184,150,62,0.3);
+  padding: 50px;
+  width: 350px;
+  text-align: center;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  background: transparent;
+  border: 1px solid rgba(184,150,62,0.2);
+  color: white;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: #b8963e;
+  border: none;
+  color: black;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+  <h2>Request Access</h2>
+
+  <form action="https://formspree.io/f/xwvykvnz" method="POST">
+    <input type="hidden" name="form-name" value="Investor Access Request">
+
+    <label style="font-size:0.7rem;letter-spacing:0.2em;color:#b8963e;">
+        Email Address
+    </label>
+    <input type="email" name="email" placeholder="Enter your email" required>
+
+    <label style="font-size:0.7rem;letter-spacing:0.2em;color:#b8963e;">
+        Brief Introduction
+    </label>
+    <textarea name="message" placeholder="Tell us about your background, interest, or reason for access"></textarea>
+
+    <button type="submit">Request Access</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
